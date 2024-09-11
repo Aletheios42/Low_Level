@@ -1,0 +1,51 @@
+1. Temporizador Simple
+
+Descripción: Configura un temporizador para generar interrupciones periódicas. Incrementa un contador y muestra el número de interrupciones cada segundo.
+Objetivo: Familiarizarse con la configuración básica de temporizadores e interrupciones.
+Archivo Sugerido: simple_timer.c
+2. Temporizador de Retraso
+
+Descripción: Implementa una función de retraso utilizando un temporizador. La función delay_ms() debe utilizar el temporizador para crear retrasos precisos en milisegundos.
+Objetivo: Practicar la implementación de retrasos precisos con temporizadores.
+Archivo Sugerido: delay_timer.c
+3. Interrupción Externa con Debouncing
+
+Descripción: Configura una interrupción externa para un botón, implementando una rutina de debouncing para evitar múltiples interrupciones rápidas.
+Objetivo: Aprender a manejar interrupciones externas y técnicas de debouncing.
+Archivo Sugerido: debounce_button.c
+4. Temporizador con PWM
+
+Descripción: Configura un temporizador para generar una señal PWM que controle la velocidad de un motor o el brillo de un LED. Ajusta el ciclo de trabajo para cambiar la velocidad o el brillo.
+Objetivo: Comprender la generación y el control de señales PWM.
+Archivo Sugerido: pwm_control.c
+5. Cronómetro y Temporizador de Cuenta Regresiva
+
+Descripción: Implementa un cronómetro que mida el tiempo transcurrido y un temporizador de cuenta regresiva que genere una interrupción cuando el tiempo se haya agotado.
+Objetivo: Manejar múltiples temporizadores y realizar la gestión de eventos basados en el tiempo.
+Archivo Sugerido: stopwatch_and_countdown.c
+6. Sistema de Prioridades de Interrupciones
+
+Descripción: Configura un sistema con múltiples interrupciones y gestiona las prioridades de las interrupciones para asegurar que las ISRs de mayor prioridad se manejen adecuadamente.
+Objetivo: Aprender sobre la gestión de prioridades de interrupciones.
+Archivo Sugerido: priority_interrupts.c
+7. Temporizador para Control de Tareas
+
+Descripción: Implementa un temporizador que ejecute diferentes tareas a intervalos regulares. Usa un sistema de cola o listas para manejar las tareas.
+Objetivo: Implementar un sistema de gestión de tareas basado en temporizadores.
+Archivo Sugerido: task_scheduler.c
+8. Daemon Básico en Linux
+
+Descripción: Crea un daemon en Linux que realice una tarea periódica (por ejemplo, registrar una entrada en un archivo de log cada minuto). Usa fork(), setsid(), y umask() para implementar el daemon.
+Objetivo: Aprender sobre la creación y gestión de daemons en sistemas Linux.
+Archivo Sugerido: basic_daemon.c
+9. Daemon con Cron Jobs
+
+Descripción: Implementa un daemon que realiza tareas basadas en el tiempo, y usa cron para programar la ejecución periódica de ciertas funciones. Configura un cron job para llamar al daemon.
+Objetivo: Integrar daemons con cron jobs para tareas programadas.
+Archivo Sugerido: daemon_with_cron.c
+10. Temporizador con Sincronización de Tiempo de Sistema
+
+Descripción: Implementa un temporizador que sincroniza su cuenta con el tiempo del sistema. Usa interrupciones para ajustar la cuenta del temporizador basándose en la hora del sistema.
+Objetivo: Integrar temporizadores con el tiempo del sistema para tareas precisas.
+Archivo Sugerido: system_time_sync.c
+

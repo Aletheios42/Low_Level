@@ -1,0 +1,17 @@
+Ejercicios:
+
+Parpadeo de LED:
+
+Programa bare-metal para hacer parpadear un LED a intervalos regulares usando un temporizador.
+Control de UART:
+
+Configura UART para enviar y recibir datos. Escribe un programa que envíe caracteres desde la consola y responda con un eco.
+Interrupciones y Temporizadores:
+
+Configura un temporizador para generar una interrupción periódica y usa la ISR para actualizar un contador.
+Lectura de ADC:
+
+Configura un ADC para leer valores de un sensor analógico y muestra el valor en la consola o en un LED.
+Comunicación SPI:
+
+Implementa una comunicación SPI usando bit-banging (sin usar el periférico SPI del microcontrolador).

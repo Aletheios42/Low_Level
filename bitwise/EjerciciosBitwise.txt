@@ -1,0 +1,24 @@
+Ejercicios:
+
+printbits - Imprime los bits de un número entero.
+abs - Calcula el valor absoluto de un número utilizando operaciones bitwise.
+swap - Intercambia dos números usando operaciones bitwise.
+count_set_bits - Cuenta el número de bits 1 en un entero.
+reverse_bits - Invierte el orden de los bits en un entero.
+bit_swap - Intercambia dos bits específicos en un número.
+is_power_of_two - Verifica si un número es una potencia de dos.
+find_rightmost_set_bit - Encuentra la posición del bit 1 más a la derecha en un entero.
+clear_bit_range - Limpia (pone en 0) un rango de bits en un entero.
+toggle_bit - Cambia el valor de un bit específico (de 0 a 1 o de 1 a 0).
+bitwise_multiply - Multiplica dos enteros utilizando sólo operaciones bitwise.
+bitwise_divide - Divide un entero entre otro utilizando sólo operaciones bitwise.
+parity_check - Verifica si el número de bits 1 en un entero es par o impar.
+toggle_case - Cambia el caso de un carácter en una cadena (mayúscula a minúscula o viceversa) usando operaciones bitwise.
+count_lowercase - Cuenta el número de caracteres en minúscula en una cadena usando operaciones bitwise.
+count_uppercase - Cuenta el número de caracteres en mayúscula en una cadena usando operaciones bitwise.
+bitwise_string_compare - Compara dos cadenas de texto utilizando operaciones bitwise para calcular la diferencia entre caracteres.
+clear_nth_bit_in_char - Limpia el enésimo bit en cada carácter de una cadena.
+set_nth_bit_in_char - Establece el enésimo bit en cada carácter de una cadena.
+bitwise_reverse_string - Invierte los caracteres en una cadena utilizando operaciones bitwise.
+string_to_uppercase - Convierte toda una cadena a mayúsculas usando operaciones bitwise para manipular los bits del carácter.
+string_to_lowercase - Convierte toda una cadena a minúsculas usando operaciones bitwise para manipular los bits del carácter.
