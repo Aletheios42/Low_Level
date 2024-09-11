@@ -1,14 +1,14 @@
 
 1. Librería de Funciones Bitwise
-printbits - Imprime los bits de un número entero.  ✅✅✅
-abs - Calcula el valor absoluto de un número utilizando operaciones bitwise.
-swap - Intercambia dos números usando operaciones bitwise.
-toggle_bit: Cambia el valor del bit en una posición específica de un byte
-reverse_bits - Invierte el orden de los bits en un entero.
-bit_swap - Intercambia dos bits específicos en un número.
-is_power_of_two - Verifica si un número es una potencia de dos.
-find_rightmost_set_bit - Encuentra la posición del bit 1 más a la derecha en un entero.
-clear_bit_range - Limpia (pone en 0) un rango de bits en un entero.
+(ok) printbits - Imprime los bits de un número entero.  ✅✅✅
+(ok)abs - Calcula el valor absoluto de un número utilizando operaciones bitwise.
+(ok)swap - Intercambia dos números usando operaciones bitwise.
+(ok)toggle_bit: Cambia el valor del bit en una posición específica de un byte
+(ok)reverse_bits - Invierte el orden de los bits en un entero.
+(ok)bit_swap - Intercambia dos bits específicos en un número.
+(ok)is_power_of_two - Verifica si un número es una potencia de dos.
+(ok)find_rightmost_set_bit - Encuentra la posición del bit 1 más a la derecha en un entero.
+(ok)clear_bit_range - Limpia (pone en 0) un rango de bits en un entero.
 bitwise_reverse_string - Invierte los caracteres en una cadena utilizando operaciones bitwise.
 bitwise_string_compare - Compara dos cadenas de texto utilizando operaciones bitwise para calcular la diferencia entre caracteres.
 string_to_uppercase - Convierte toda una cadena a mayúsculas usando operaciones bitwise para manipular los bits del carácter.

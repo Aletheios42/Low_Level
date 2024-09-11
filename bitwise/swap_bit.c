@@ -5,24 +5,26 @@ void print_bytes(char byte) {
     printf("%u", bit);
   }
 }
-void swap_bit_v1(char *byte, int index1, int index2) {
-  char aux1;
-  char aux2;
+void swap_bits_v1(char *byte, int index1, int index2) {
+  if (index1 < 0 || index1 > 7 || index2 < 0 || index2 > 7 ||
+      index1 == index2) {
+    // Manejo de errores: índices fuera de rango o iguales
+    return;
+  }
 
-  aux1 = (((*byte >> index1) & 0b1) << index2);
-  aux2 = (((*byte >> index2) & 0b1) << index1);
-  printf("Aux1          Aux2\n");
-  print_bytes(aux1);
-  printf(" ||| ");
-  print_bytes(aux2);
-  printf("\n");
+  // Extraer los bits en las posiciones de index1 y index2
+  char bit1 = (*byte >> index1) & 0b1;
+  char bit2 = (*byte >> index2) & 0b1;
 
-  *byte ^= aux1;
-  *byte ^= aux2;
+  if (bit1 != bit2) {
+    char mask = (1 << index1) | (1 << index2);
+    *byte &= ~mask;
+    *byte |= (bit1 << index2) | (bit2 << index1);
+  }
 }
 
 int main(void) {
-  char byte = 0b11111111;
+  char byte = 0b01101111;
   int index1 = 1;
   int index2 = 7;
 
@@ -33,7 +35,7 @@ int main(void) {
   }
   printf("\n");
 
-  swap_bit_v1(&byte, index1, index2);
+  swap_bits_v1(&byte, index1, index2);
 
   printf("binario despues del swap\n");
 
