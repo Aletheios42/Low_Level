@@ -1,0 +1,34 @@
+Librería en Assembly (libasm.a)
+Capítulo III (Parte Obligatoria):
+
+ft_strlen: Calcula la longitud de una cadena.
+ft_strcpy: Copia una cadena a otra.
+ft_strcmp: Compara dos cadenas.
+ft_write: Escribe en un descriptor de archivo.
+ft_read: Lee desde un descriptor de archivo.
+ft_strdup: Duplica una cadena usando malloc.
+Capítulo IV (Parte Opcional):
+
+ft_atoi_base: Convierte una cadena a un entero, dado una base.
+ft_list_push_front: Añade un elemento al inicio de una lista enlazada.
+ft_list_size: Calcula el tamaño de una lista enlazada.
+ft_list_sort: Ordena una lista enlazada.
+ft_list_remove_if: Elimina elementos de una lista enlazada basándose en una condición.
+Proyectos Adicionales
+Calculadora Aritmética en Assembly:
+
+Descripción: Implementa una calculadora básica en Assembly que soporte operaciones aritméticas (suma, resta, multiplicación, división) y aritmética modular.
+Funciones:
+ft_add: Suma dos números.
+ft_subtract: Resta dos números.
+ft_multiply: Multiplica dos números.
+ft_divide: Divide dos números.
+ft_mod: Calcula el módulo de dos números.
+Máquina de Von Neumann en Assembly:
+
+Descripción: Implementa una simulación básica de una máquina de Von Neumann en Assembly. Esto incluye los componentes principales como la CPU, la memoria y los buses de datos y direcciones.
+Componentes:
+CPU: Implementa el ciclo de instrucción básico (fetch-decode-execute).
+Memoria: Almacena instrucciones y datos.
+Bus de Datos y Direcciones: Maneja la transferencia de datos entre la CPU, la memoria y los dispositivos de E/S.
+Instrucciones Básicas: Implementa un conjunto básico de instrucciones (cargar, almacenar, sumar, restar, etc.).

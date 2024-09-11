@@ -1,0 +1,22 @@
+microcontroladores
+
+Emulación de microcontroladores AVR, PIC, ARM: Simulación de CPU, memoria, y periféricos.
+uart
+
+Emulación de UART: Comunicación serial asíncrona.
+spi
+
+Emulación de SPI: Comunicación serial síncrona.
+i2c
+
+Emulación de I2C: Comunicación serial con múltiples dispositivos en un bus.
+temporizadores
+
+Emulación de Temporizadores y Contadores: Generación y manejo de eventos temporizados.
+adc
+
+Emulación de ADC: Conversión analógico-digital.
+pwm
+
+Emulación de PWM: Generación de señales PWM (Modulación por Ancho de Pulso).
+
