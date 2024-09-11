@@ -1,0 +1,61 @@
+Sistemas - Lista Completa de Ejercicios
+1. Daemon de Aviso para el Nivel de Batería
+
+Descripción: Crea un daemon en Linux que monitoree el nivel de batería del sistema y envíe una alerta (por ejemplo, un mensaje en el log o una notificación) cuando el nivel de batería sea bajo.
+Objetivo: Aprender a interactuar con las APIs del sistema para obtener información sobre el hardware y gestionar tareas periódicas.
+Archivo Sugerido: battery_alert_daemon.c
+2. Daemon con Configuración Avanzada y Cron Jobs
+
+Descripción: Implementa un daemon que realiza tareas periódicas avanzadas, como limpieza de archivos temporales o monitorización de servicios, y configura cron para ejecutar funciones adicionales relacionadas.
+Objetivo: Desarrollar habilidades avanzadas en la creación de daemons y su integración con cron jobs para tareas programadas.
+Archivo Sugerido: advanced_daemon_with_cron.c
+3. Sistema de Temporizador con Sincronización Precisa
+
+Descripción: Implementa un temporizador que sincroniza su cuenta con el tiempo del sistema usando técnicas de ajuste fino. Considera el uso de técnicas de corrección de drift para mantener la precisión.
+Objetivo: Desarrollar habilidades en la sincronización precisa de temporizadores y en la corrección de errores de temporización.
+Archivo Sugerido: precise_time_sync.c
+4. Implementar una Máquina Virtual Básica
+
+Descripción: Diseña e implementa una máquina virtual simple que ejecute un conjunto básico de instrucciones. Implementa operaciones aritméticas, lógicas y de salto.
+Objetivo: Aprender sobre la emulación de hardware y la interpretación de instrucciones de bajo nivel.
+Archivo Sugerido: simple_vm.c
+5. Crear un Sistema de Archivos Básico
+
+Descripción: Implementa un sistema de archivos simple en C que gestione la lectura y escritura de archivos en un dispositivo de almacenamiento simulado.
+Objetivo: Familiarizarse con conceptos de sistemas de archivos y gestión de datos a nivel de software.
+Archivo Sugerido: basic_fs.c
+6. Implementar un Planificador de Tareas
+
+Descripción: Crea un planificador de tareas básico que ejecute tareas periódicas con diferentes prioridades. Implementa un sistema de gestión de tareas que permita agregar, ejecutar, modificar y eliminar tareas, así como registrar la ejecución en un archivo de log.
+Objetivo: Desarrollar habilidades en la implementación de algoritmos de planificación y gestión de tareas. Practicar la manipulación de colas o listas para la gestión de tareas con diferentes prioridades.
+Archivo Sugerido: task_scheduler.c
+7. Comunicación entre Procesos (IPC) Avanzada
+
+Descripción: Implementa mecanismos de comunicación entre procesos utilizando técnicas avanzadas como memoria compartida con sincronización y semáforos.
+Objetivo: Aprender sobre técnicas avanzadas de IPC y sincronización en sistemas multiproceso.
+Archivo Sugerido: advanced_ipc.c
+8. Gestión de Memoria Básica con Implementación de malloc
+
+Descripción: Implementa un sistema básico de gestión de memoria que replique el comportamiento de malloc y free. Incluye la gestión de bloques de memoria y técnicas básicas de asignación dinámica.
+Objetivo: Practicar la implementación de un gestor de memoria y entender el funcionamiento de malloc.
+Archivo Sugerido: memory_manager.c
+9. Manejo de Señales en Linux
+
+Descripción: Implementa un programa que maneje diferentes señales en Linux. Configura manejadores para señales como SIGINT (Ctrl+C), SIGTERM (terminación) y SIGUSR1 (señal de usuario 1). Permite el envío de señales desde la línea de comandos y maneja señales en tiempo real (SIGRTMIN y SIGRTMAX) si es necesario.
+Objetivo: Aprender a manejar señales en sistemas Linux y comprender cómo afectan al flujo de ejecución de un programa.
+Archivo Sugerido: signal_handling.c
+10. Implementar un Monitor de Sistema Básico
+
+Descripción: Crea una herramienta simple para monitorear el uso de recursos del sistema, como CPU, memoria y almacenamiento. Proporciona informes en tiempo real sobre el estado del sistema.
+Objetivo: Familiarizarse con la recolección y visualización de métricas del sistema.
+Archivo Sugerido: system_monitor.c
+11. Implementación de un Bootloader Básico
+
+Descripción: Desarrolla un bootloader simple que cargue y ejecute un programa desde una imagen de disco. Implementa el código necesario para leer sectores del disco y transferir el control al programa cargado.
+Objetivo: Aprender sobre el arranque de sistemas y la carga de programas a nivel de firmware.
+Archivo Sugerido: simple_bootloader.asm
+12. Comunicación Serial Básica
+
+Descripción: Implementa un controlador de comunicación serial básico que envíe y reciba datos a través de un puerto serial. Incluye la configuración de parámetros de comunicación y manejo de interrupciones.
+Objetivo: Familiarizarse con la comunicación serial a nivel de hardware.
+Archivo Sugerido: serial_comm.c
