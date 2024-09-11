@@ -1,9 +1,9 @@
 
 1. Librería de Funciones Bitwise
-printbits - Imprime los bits de un número entero.
+printbits - Imprime los bits de un número entero.  ✅✅✅
 abs - Calcula el valor absoluto de un número utilizando operaciones bitwise.
 swap - Intercambia dos números usando operaciones bitwise.
-count_set_bits - Cuenta el número de bits 1 en un entero.
+toggle_bit: Cambia el valor del bit en una posición específica de un byte. La función usa operaciones bitwise para invertir el bit en la posición dada (es decir, cambia 0 a 1 y 1 a 0).count_set_bits - Cuenta el número de bits 1 en un entero.
 reverse_bits - Invierte el orden de los bits en un entero.
 bit_swap - Intercambia dos bits específicos en un número.
 is_power_of_two - Verifica si un número es una potencia de dos.
@@ -15,7 +15,6 @@ string_to_uppercase - Convierte toda una cadena a mayúsculas usando operaciones
 clear_nth_bit_in_char - Limpia el enésimo bit en cada carácter de una cadena.
 set_nth_bit_in_char - Establece el enésimo bit en cada carácter de una cadena.
 string_to_lowercase - Convierte toda una cadena a minúsculas usando operaciones bitwise para manipular los bits del carácter.
-toggle_case - Cambia el caso de un carácter en una cadena (mayúscula a minúscula o viceversa) usando operaciones bitwise.
 
 2. Calculadora Aritmética y Congruencia
 bitwise_multiply - Multiplica dos enteros utilizando sólo operaciones bitwise.
