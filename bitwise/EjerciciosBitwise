@@ -3,7 +3,7 @@
 printbits - Imprime los bits de un número entero.  ✅✅✅
 abs - Calcula el valor absoluto de un número utilizando operaciones bitwise.
 swap - Intercambia dos números usando operaciones bitwise.
-toggle_bit: Cambia el valor del bit en una posición específica de un byte. La función usa operaciones bitwise para invertir el bit en la posición dada (es decir, cambia 0 a 1 y 1 a 0).count_set_bits - Cuenta el número de bits 1 en un entero.
+toggle_bit: Cambia el valor del bit en una posición específica de un byte
 reverse_bits - Invierte el orden de los bits en un entero.
 bit_swap - Intercambia dos bits específicos en un número.
 is_power_of_two - Verifica si un número es una potencia de dos.
