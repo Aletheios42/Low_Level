@@ -1,3 +1,4 @@
+
 int count_set_bits(char c) {
   int count = 0;
 

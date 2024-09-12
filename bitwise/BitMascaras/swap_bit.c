@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void print_bytes(char byte) {
   for (int b = 7; b >= 0; b--) {
     char bit = (byte >> b) & 0b00000001;
@@ -8,7 +9,6 @@ void print_bytes(char byte) {
 void swap_bits_v1(char *byte, int index1, int index2) {
   if (index1 < 0 || index1 > 7 || index2 < 0 || index2 > 7 ||
       index1 == index2) {
-    // Manejo de errores: índices fuera de rango o iguales
     return;
   }
 

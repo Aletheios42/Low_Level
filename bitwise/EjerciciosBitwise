@@ -1,31 +1,42 @@
 
-1. Librería de Funciones Bitwise
-(ok) printbits - Imprime los bits de un número entero.  ✅✅✅
-(ok)abs - Calcula el valor absoluto de un número utilizando operaciones bitwise.
-(ok)swap - Intercambia dos números usando operaciones bitwise.
-(ok)toggle_bit: Cambia el valor del bit en una posición específica de un byte
-(ok)reverse_bits - Invierte el orden de los bits en un entero.
-(ok)bit_swap - Intercambia dos bits específicos en un número.
-(ok)is_power_of_two - Verifica si un número es una potencia de dos.
-(ok)find_rightmost_set_bit - Encuentra la posición del bit 1 más a la derecha en un entero.
-(ok)clear_bit_range - Limpia (pone en 0) un rango de bits en un entero.
-bitwise_reverse_string - Invierte los caracteres en una cadena utilizando operaciones bitwise.
-bitwise_string_compare - Compara dos cadenas de texto utilizando operaciones bitwise para calcular la diferencia entre caracteres.
-string_to_uppercase - Convierte toda una cadena a mayúsculas usando operaciones bitwise para manipular los bits del carácter.
-clear_nth_bit_in_char - Limpia el enésimo bit en cada carácter de una cadena.
-set_nth_bit_in_char - Establece el enésimo bit en cada carácter de una cadena.
-string_to_lowercase - Convierte toda una cadena a minúsculas usando operaciones bitwise para manipular los bits del carácter.
+1. Máscaras y Manipulación de Bits
+___________________________________________________
+º1)get_bit: Obtiene el valor del bit en una posición específica de un byte.
+º2)set_bit: Establece el valor de un bit en una posición específica de un byte.
+º3)count_set_bits: Cuenta los bits establecidos en un byte.
+º4)swap_bits: Intercambia dos bits específicos en un número. ✅
+º5)clear_bits: Limpia (pone en 0) el bit en una posición específica de un byte.
+6)rotate_bits: Rota los bits de un byte
+7)create_mask: Crea una máscara para un rango de bits.
+8)perform_action_based_on_bit: Realiza una acción basada en el valor de un bit.
 
-2. Calculadora Aritmética y Congruencia
-bitwise_multiply - Multiplica dos enteros utilizando sólo operaciones bitwise.
-bitwise_divide - Divide un entero entre otro utilizando sólo operaciones bitwise.
-parity_check - Verifica si el número de bits 1 en un entero es par o impar.
-3. Algoritmo Base64
-Base64 Encoding - Implementa el algoritmo Base64 para codificar datos binarios en una representación textual.
-Base64 Decoding - Implementa el algoritmo Base64 para decodificar datos codificados en Base64 de vuelta a su forma binaria original.
-4. Algoritmos para Detección de Errores
-parity - Implementa la verificación de paridad utilizando operaciones bitwise.
-hamming_code - Implementa el código de Hamming para detección y corrección de errores.
-checksum - Implementa una suma de verificación básica para detectar errores en datos.
-crc - Implementa un algoritmo CRC (Cyclic Redundancy Check) para la verificación de errores en datos.
+2. Matemáticas Bitwise y Operaciones Aritméticas
+___________________________________________________
+1)bitwise_add: Suma dos números utilizando operaciones bitwise.
+2)bitwise_sub: Resta dos números utilizando operaciones bitwise.
+3)bitwise_multiply: Multiplica dos números utilizando operaciones bitwise.
+4)bitwise_divide: Divide dos números utilizando operaciones bitwise.
+5)bitwise_modulo: Calcula el módulo de dos números utilizando operaciones bitwise.
+6)abs: Calcula el valor absoluto de un número utilizando operaciones bitwise.
+7)power: Calcula la potencia utilizando operaciones bitwise.
+8)sqrt: Calcula la raíz cuadrada de un número utilizando operaciones bitwise.
 
+3. Librería de Funciones Bitwise y de Uso Cotidiano
+___________________________________________________
+1)toupper: Convierte un carácter a su versión en mayúsculas.
+2)is_power_of_two: Verifica si un número es una potencia de dos. ✅
+3)swap: Intercambia dos números usando operaciones bitwise. ✅
+4)print_bits: Imprime los bits de un número entero. ✅
+5)find_rightmost_set_bit: Encuentra la posición del bit 1 más a la derecha en un entero. ✅
+6)string_compare: Compara dos cadenas de caracteres.
+7)search_chr: Busca un carácter específico dentro de una cadena.
+8)search_substring: Busca una subcadena específica dentro de una cadena.
+
+4. Algoritmos y Codificación
+___________________________________________________
+1)parity: Implementa la verificación de paridad utilizando operaciones bitwise.
+2)hamming_code: Implementa el código de Hamming para detección y corrección de errores.
+3)checksum: Implementa una suma de verificación básica para detectar errores en datos.
+4)crc: Implementa un algoritmo CRC (Cyclic Redundancy Check) para la verificación de errores en datos.
+5)Base64 Encoding: Implementa el algoritmo Base64 para codificar datos binarios en una representación textual.
+6)Base64 Decoding: Implementa el algoritmo Base64 para decodificar datos codificados en Base64 de vuelta a su forma binaria original.
