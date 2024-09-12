@@ -3,12 +3,10 @@
 ___________________________________________________
 º1)get_bit: Obtiene el valor del bit en una posición específica de un byte.
 º2)set_bit: Establece el valor de un bit en una posición específica de un byte.
-º3)count_set_bits: Cuenta los bits establecidos en un byte.
-º4)swap_bits: Intercambia dos bits específicos en un número. ✅
-º5)clear_bits: Limpia (pone en 0) el bit en una posición específica de un byte.
-6)rotate_bits: Rota los bits de un byte
-7)create_mask: Crea una máscara para un rango de bits.
-8)perform_action_based_on_bit: Realiza una acción basada en el valor de un bit.
+º3)swap_bits: Intercambia dos bits específicos en un número. ✅
+º4)clear_bits: Limpia (pone en 0) el bit en una posición específica de un byte.
+5)create_mask: Crea una máscara para un rango de bits.
+6)perform_action_based_on_bit: Realiza una acción basada en el valor de un bit.
 
 2. Matemáticas Bitwise y Operaciones Aritméticas
 ___________________________________________________

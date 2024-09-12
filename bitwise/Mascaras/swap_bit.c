@@ -6,6 +6,7 @@ void print_bytes(char byte) {
     printf("%u", bit);
   }
 }
+
 void swap_bits_v1(char *byte, int index1, int index2) {
   if (index1 < 0 || index1 > 7 || index2 < 0 || index2 > 7 ||
       index1 == index2) {
@@ -20,6 +21,25 @@ void swap_bits_v1(char *byte, int index1, int index2) {
     char mask = (1 << index1) | (1 << index2);
     *byte &= ~mask;
     *byte |= (bit1 << index2) | (bit2 << index1);
+  }
+}
+
+void swap_bits_v2(char *byte, int index1, int index2) {
+  if (index1 < 0 || index1 > 7 || index2 < 0 || index2 > 7 ||
+      index1 == index2) {
+    return;
+  }
+
+  // la mascara va a ser todo 0 menos en los index
+  // que sera en funcion del input.
+  // se hace el "&" con byte para conprobarlo
+  char mask = ((1 << index1) | (1 << index2)) & *byte;
+
+  // se utiliza la mascara para saber si los bits  acambiar son diferentes
+  // ya que si son iguales no hay que realizar el cambio
+  if (mask != 0 && mask != ((1 << index1) | (1 << index2))) {
+    // Se realiza la operazar "^= 1" que en esencia es un togle
+    *byte ^= (1 << index1) | (1 << index2);
   }
 }
 

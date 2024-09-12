@@ -29,6 +29,10 @@ void clear_bit_v2(char *byte, int index) {
   printf("\n");
 }
 
+unsigned char clear_bit_v3(unsigned char byte, int index) {
+  return byte & ~(1 << index);
+}
+
 void print_bits_int(int n) {
   for (int b = 31; b >= 0; b--) {
     char bit = (n >> b) & 0b00000001;
