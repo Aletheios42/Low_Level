@@ -20,7 +20,7 @@ void print_bits_char_v2(char byte) {
   }
 }
 
-void print_bits_int(int n) {
+void print_bits_int_big_endian(int n) {
   for (int b = 31; b >= 0; b--) {
     char bit = (n >> b) & 0b00000001;
     printf("%u", bit & 0b1);
@@ -29,7 +29,7 @@ void print_bits_int(int n) {
   }
 }
 
-void print_bits(void *data, int len) {
+void print_bits_big_endian(void *data, int len) {
   // Castear a puntero a byte
   unsigned char *byte_data = (unsigned char *)data;
 
@@ -42,6 +42,21 @@ void print_bits(void *data, int len) {
     }
     printf(" ");
   }
+}
+void print_bits(void *data, int len) {
+  // Castear a puntero a byte
+  unsigned char *byte_data = (unsigned char *)data;
+
+  // Iterar sobre cada byte en orden inverso (desde el byte menos significativo)
+  for (int i = len - 1; i >= 0; i--) {
+    // Iterar sobre cada bit en el byte
+    for (int b = 7; b >= 0; b--) {
+      char bit = (byte_data[i] >> b) & 0b00000001;
+      printf("%u", bit & 0b1);
+    }
+    printf(" ");
+  }
+  printf("\n");
 }
 void print_string(const char *str) {
   // Imprime los encabezados

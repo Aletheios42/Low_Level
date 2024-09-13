@@ -5,8 +5,7 @@ ___________________________________________________
 º2)set_bit: Establece el valor de un bit en una posición específica de un byte.
 º3)swap_bits: Intercambia dos bits específicos en un número. ✅
 º4)clear_bits: Limpia (pone en 0) el bit en una posición específica de un byte.
-5)create_mask: Crea una máscara para un rango de bits.
-6)perform_action_based_on_bit: Realiza una acción basada en el valor de un bit.
+º5)create_mask: Crea una máscara para un rango de bits.
 
 2. Matemáticas Bitwise y Operaciones Aritméticas
 ___________________________________________________

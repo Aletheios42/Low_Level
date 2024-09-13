@@ -2,18 +2,14 @@
 // ºContar los Bits Establecidos en 1(Popcount)
 // ºEncontrar la Posición del Bit MásSignificativo(MSB)
 // ºEncontrar la Posición del Bit MenosSignificativo(LSB)
-// Invertir los N Bits Menos Significativos
-// Invertir los N Bits Más Significativos
-// Invertir un range de Bits
-// Extraer un Campo de Bits Específico de un Número
-// Generar una Máscara de Bits con N 1s Seguidos
-// Generar una Máscara de Bits Contiguos
-// Crear una Máscara de Bits a partir de una Secuencia de Posiciones
-// Crear una Máscara con un Patrón Repetitivo
-// Construir una Máscara para Seleccionar N Bits Consecutivos a partir de una
-// Posición Específica Crear una Máscara que Alterna Bits en 1 y 0
+// ºInvertir los N Bits Menos Significativos
+// ºInvertir los N Bits Más Significativos
+// ºInvertir un range de Bits
+// ºGenerar una Máscara de Bits con N 1s Seguidos
+// ºCrear una Máscara de Bits a partir de una Secuencia de Posiciones
+// ºCrear una Máscara con un Patrón Repetitivo
 //
-//         mirar ejercicios avanzados
+//
 //
 //      TEMPLATE
 //  _______________
@@ -21,12 +17,13 @@
 //   unsigned char mask = 0;
 // }
 #include <stdio.h>
+
 void print_bits(void *data, int len) {
   // Castear a puntero a byte
   unsigned char *byte_data = (unsigned char *)data;
 
-  // Iterar sobre cada byte
-  for (int i = 0; i < len; i++) {
+  // Iterar sobre cada byte en orden inverso (desde el byte menos significativo)
+  for (int i = len - 1; i >= 0; i--) {
     // Iterar sobre cada bit en el byte
     for (int b = 7; b >= 0; b--) {
       char bit = (byte_data[i] >> b) & 0b00000001;
@@ -34,6 +31,7 @@ void print_bits(void *data, int len) {
     }
     printf(" ");
   }
+  printf("\n");
 }
 
 int mask_parity(int n) {
@@ -41,6 +39,15 @@ int mask_parity(int n) {
 
   mask |= 0b1;
   return n & mask;
+}
+
+int count_set_bits(char c) {
+  int count = 0;
+
+  for (int i = 7; i >= 0; i--) {
+    count += (c >> i) & 0b1;
+  }
+  return count;
 }
 
 int mask_MSB(int n) {
@@ -98,25 +105,99 @@ int mask_LSB(unsigned char n) {
   return index;
 }
 
-int count_set_bits(char c) {
-  int count = 0;
+// Invertir los N Bits Menos Significativos
+void mask_invert_least_significant_bits(unsigned char *byte, int n) {
+  if (n <= 0 || n > 8)
+    return;
 
-  for (int i = 7; i >= 0; i--) {
-    count += (c >> i) & 0b1;
+  // Crear la máscara con los N bits menos significativos en 1
+  // pongo 1 en el indice n, y al restar 1, cambio el 1 introducido por 0
+  // e invierto todos los 0 de su derecha, como ordinal = cardinal + 1, da n
+  unsigned char mask = (1 << n) - 1;
+
+  // La operacion ^ con 1 , es alternar
+  *byte ^= mask;
+}
+
+void mask_invert_most_significant_bits(unsigned char *byte, int n) {
+
+  if (n <= 0 || n > 8)
+    return;
+
+  // 0xFF es todo 1, asi que con es desplazamiento dejo 8 - n
+  // ceros a la izquierda, por lo que dejo n 1 a la derecha
+  //  ^ con un 1 es un toggle, asi que hecho
+  unsigned char mask = 0xFF << (8 - n);
+
+  *byte ^= mask;
+}
+
+void mask_invert_range_bits(unsigned char *byte, int start, int end) {
+  if ((start > end) || (end > 7) || (start < 0)) {
+    return;
   }
-  return count;
+
+  // el numero es 0, start 3 y end 5
+  //(1 << (end - start + 1)
+  // desplaza el 1 al indece de valor el rango, 0000 1000
+  // -1 hace haya tantos 1 como el rango t pide 0000 0111
+  // << start los desplaza para que coloquen en su posicion 0011 1000
+  unsigned char mask = ((1 << (end - start + 1)) - 1) << start;
+  // los 0 mantienen el valor los 1 los alternan,
+  *byte ^= mask;
+}
+
+// Generar una Máscara de Bits con N 1s Seguidos
+void mask_generate_on_range(char *byte, int start, int end) {
+  if ((start > end) || (end > 7) || (start < 0)) {
+    return;
+  }
+
+  unsigned char mask = ((1 << (end - start + 1)) - 1) << start;
+  *byte |= mask;
+}
+
+// Crear una Máscara de Bits a partir de una Secuencia de Posiciones
+void mask_on_pos(unsigned char *byte, int *pos, int lenght) {
+  unsigned char mask = 0;
+
+  for (int i = 0; i < lenght; i++) {
+    if (pos[i] >= 0 && pos[i] <= 7)
+      // para encender un bit en pos
+      mask |= (1 << pos[i]);
+  }
+  *byte |= mask;
+}
+
+// Crear una Máscara con un Patrón Repetitivo
+void mask_repetitive_pattern(unsigned int *byte, unsigned char pattern,
+                             int pattern_length, int repetitions) {
+  if (pattern_length <= 0 || pattern_length > 8 || repetitions <= 0) {
+    return;
+  }
+
+  unsigned int mask = 0;
+
+  // Repetir el patrón y ajustarlo dentro de un byte
+  for (int i = 0; i < repetitions; i++) {
+    // Desplazar el patrón según el número de veces que se repite
+    mask |= (pattern << (i * pattern_length));
+  }
+
+  *byte = mask; // Aplicar la máscara generada al byte
 }
 
 int main() {
-  int number = 0b1001000;
-
+  int number = 0b00000;
+  char num = 0b1;
   printf("Original number in binary:\n ");
   print_bits(&number, sizeof(number));
   printf("\n");
 
-  int msb_position = mask_LSB(number);
-  printf("Position of the LSB: %d\n", msb_position);
-  printf("\n");
+  mask_repetitive_pattern(&number, 0b1101, 4, 8);
+  printf("Result after fn \n");
+  print_bits(&number, sizeof(number));
+  printf("number %d\n", number);
 
   return 0;
 }
