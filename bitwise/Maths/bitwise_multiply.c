@@ -19,17 +19,51 @@ void print_bits(void *data, int len) {
   printf("\n");
 }
 
-// 10   0000 1010       7   0000 0111        5    0000 0101
-// 10*2 0001 0100       7*2 0000 1101        5*2  0000 1010
-// 10*3 0001 1110       7*3 0001 0101        5*3  0000 1111
-// 10*4 0010 1000       7*4 0001 1100        5*4  0001 0000
-// 10*5 0011 0010       7*5 0010 0011        5*5  0001 1001
+// 25  0001 1001
+// 19  0001 0011
+// _____________
+//    25
+//    19
+//    __       85     basicamente se multiplica por 1 o por 0
+//                    y se shitea en unfuncion de la posicion que ocupaba ese
+//                    digito
+//    225 --->14      asi que cada sumando se puede hacer igual que en la suma
+//                    solo que hay otra logica para el result y el carry
+//    25              luego se suman cada result y carry de cad digito del
+// _______________    factor para dar el resultado final,
+//   275              revisar que el carry esta alineado con el result siguiente
+//
 
 int bitwise_multiply_v1(short x, short y) {
-  int result;
-  result = x << 1;
-
+  int result = 0;
+  int shift = 0;
+  while (y) {
+    // si y[i] entonces sumo, si no no.
+    if (y)
+      result += (x ^ ((y << shift) & 0b1));
+    shift++;
+    y >>= 1;
+  }
   return result;
+}
+
+int bitwise_multiply_v2(short x, short y) {
+  int result;
+  int i = -1;
+  int j;
+  // en este itero sobre los bit de i
+  while (++i < 8) {
+    j = -1;
+    // en este while compro cada bit del x con un bit de y
+    while (++j < 8) {
+    }
+  }
+}
+int bitwise_max(int x, int y) {
+  int diff = x - y;
+  int sign = (diff >> (sizeof(int) * 8 - 1)) &
+             1;              // Obtiene el bit de signo de la diferencia
+  return y + (diff & ~sign); // Devuelve el máximo
 }
 
 int main() {
@@ -40,7 +74,7 @@ int main() {
   z = bitwise_multiply_v1(x, y);
   printf("la Multiplicacion1   z:%d =?  x:%d * y:%d\n", z, x, y);
   assert(z == (int)x * (int)y);
-  printf("\nLa resta v1 es correcta\n\n");
+  printf("\nLa Multiplicacionv1 es correcta\n\n");
 
   // z = bitwise_multiply_v2(x, y);
   // printf("la resta2   z:%d =?  x:%d - y:%d\n", z, x, y);
