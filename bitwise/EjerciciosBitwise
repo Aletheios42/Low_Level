@@ -9,23 +9,23 @@ ___________________________________________________
 
 2. Matemáticas Bitwise y Operaciones Aritméticas
 ___________________________________________________
-1)bitwise_add: Suma dos números utilizando operaciones bitwise.
-2)bitwise_sub: Resta dos números utilizando operaciones bitwise.
-3)bitwise_multiply: Multiplica dos números utilizando operaciones bitwise.
-4)bitwise_divide: Divide dos números utilizando operaciones bitwise.
-5)bitwise_modulo: Calcula el módulo de dos números utilizando operaciones bitwise.
-6)abs: Calcula el valor absoluto de un número utilizando operaciones bitwise.
-7)power: Calcula la potencia utilizando operaciones bitwise.
-8)sqrt: Calcula la raíz cuadrada de un número utilizando operaciones bitwise.
+º1)is_power_of_two: Comprueba si es potencia de 2
+º2)bitwise_add: Suma dos números utilizando operaciones bitwise.
+º3)bitwise_sub: Resta dos números utilizando operaciones bitwise.
+º4)bitwise_multiply: Multiplica dos números utilizando operaciones bitwise.
+º5)bitwise_divide: Divide dos números utilizando operaciones bitwise.
+º6)bitwise_modulo: Calcula el módulo de dos números utilizando operaciones bitwise.
+º7)bitwise_min_max: Devuelve el min o el max de 2 numeros dados
+
 
 3. Librería de Funciones Bitwise y de Uso Cotidiano
 ___________________________________________________
-1)toupper: Convierte un carácter a su versión en mayúsculas.
-2)is_power_of_two: Verifica si un número es una potencia de dos. ✅
-3)swap: Intercambia dos números usando operaciones bitwise. ✅
-4)print_bits: Imprime los bits de un número entero. ✅
-5)find_rightmost_set_bit: Encuentra la posición del bit 1 más a la derecha en un entero. ✅
-6)string_compare: Compara dos cadenas de caracteres.
+º1)toupper: Convierte un carácter a su versión en mayúsculas.
+º2)reverse_bits.c: invierte los bits de un byte.
+º3)swap: Intercambia dos bytes usando operaciones bitwise. ✅
+º4)find_rightmost_set_bit: Encuentra la posición del bit 1 más a la derecha en un entero. ✅
+º5)print_bits: Imprime los bits de un número entero. ✅
+º6)string_compare: Compara dos cadenas de caracteres.
 7)search_chr: Busca un carácter específico dentro de una cadena.
 8)search_substring: Busca una subcadena específica dentro de una cadena.
 

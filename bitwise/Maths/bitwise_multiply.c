@@ -47,24 +47,18 @@ int bitwise_multiply_v1(short x, short y) {
   return result;
 }
 
-int bitwise_multiply_v2(short x, short y) {
-  int result;
-  int i = -1;
-  int j;
-  // en este itero sobre los bit de i
-  while (++i < 8) {
-    j = -1;
-    // en este while compro cada bit del x con un bit de y
-    while (++j < 8) {
-    }
-  }
-}
-int bitwise_max(int x, int y) {
-  int diff = x - y;
-  int sign = (diff >> (sizeof(int) * 8 - 1)) &
-             1;              // Obtiene el bit de signo de la diferencia
-  return y + (diff & ~sign); // Devuelve el máximo
-}
+// int bitwise_multiply_v2(short x, short y) {
+//   int result;
+//   int i = -1;
+//   int j;
+//   // en este itero sobre los bit de i
+//   while (++i < 8) {
+//     j = -1;
+//     // en este while compro cada bit del x con un bit de y
+//     while (++j < 8) {
+//     }
+//   }
+// }
 
 int main() {
   short x = 0xA;
