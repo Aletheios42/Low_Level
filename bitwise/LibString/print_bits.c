@@ -43,6 +43,7 @@ void print_bits_big_endian(void *data, int len) {
     printf(" ");
   }
 }
+
 void print_bits(void *data, int len) {
   // Castear a puntero a byte
   unsigned char *byte_data = (unsigned char *)data;
@@ -58,6 +59,7 @@ void print_bits(void *data, int len) {
   }
   printf("\n");
 }
+
 void print_string(const char *str) {
   // Imprime los encabezados
   printf("%-6s %-6s %-6s %-7s %-7s %s\n", "Index", "Dec", "Hex", "Oct", "Bin",

@@ -4,36 +4,43 @@ Embedded - Lista de Ejercicios
 Descripción: Programa bare-metal para hacer parpadear un LED a intervalos regulares usando un temporizador.
 Objetivo: Practicar la configuración básica de temporizadores y el control de periféricos.
 Archivo Sugerido: led_blink.c
+
 2. Control de UART
 
 Descripción: Configura UART para enviar y recibir datos. Escribe un programa que envíe caracteres desde la consola y responda con un eco.
 Objetivo: Aprender la comunicación serial y el manejo de periféricos UART.
 Archivo Sugerido: uart_echo.c
+
 3. Interrupciones y Temporizadores
 
 Descripción: Configura un temporizador para generar una interrupción periódica y usa la ISR para actualizar un contador.
 Objetivo: Integrar la gestión de interrupciones con temporizadores.
 Archivo Sugerido: timer_interrupt.c
+
 4. Lectura de ADC
 
 Descripción: Configura un ADC para leer valores de un sensor analógico y muestra el valor en la consola o en un LED.
 Objetivo: Trabajar con la conversión analógico-digital y la visualización de datos.
 Archivo Sugerido: adc_read.c
+
 5. Comunicación SPI
 
 Descripción: Implementa una comunicación SPI usando bit-banging (sin usar el periférico SPI del microcontrolador).
 Objetivo: Practicar la comunicación serial síncrona y el bit-banging.
 Archivo Sugerido: spi_bit_bang.c
+
 6. Temporizador PWM
 
 Descripción: Configura un temporizador para generar una señal PWM que controle la velocidad de un motor o el brillo de un LED. Ajusta el ciclo de trabajo para cambiar la velocidad o el brillo.
 Objetivo: Implementar y controlar señales PWM para aplicaciones de hardware.
 Archivo Sugerido: pwm_control.c
+
 7. Cronómetro y Temporizador de Cuenta Regresiva
 
 Descripción: Implementa un cronómetro que mida el tiempo transcurrido y un temporizador de cuenta regresiva que genere una interrupción cuando el tiempo se haya agotado.
 Objetivo: Manejar múltiples temporizadores y eventos basados en el tiempo.
 Archivo Sugerido: stopwatch_and_countdown.c
+
 8. Sistema de Prioridades de Interrupciones
 
 Descripción: Configura un sistema con múltiples interrupciones y gestiona las prioridades de las interrupciones para asegurar que las ISRs de mayor prioridad se manejen adecuadamente.

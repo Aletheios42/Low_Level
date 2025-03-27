@@ -6,7 +6,9 @@ typedef unsigned char (*get_bit_range_func)(unsigned char, int, int);
 
 // version safe
 void print_bits_char_v2(char byte) {
-  for (int b = 7; b >= 0; b--) {
+  int b = 7;
+  while (b >= 0) {
+    b--;
     char bit = (byte >> b) & 0b00000001;
     printf("%u", bit & 0b1);
   }

@@ -26,14 +26,13 @@ ___________________________________________________
 º4)find_rightmost_set_bit: Encuentra la posición del bit 1 más a la derecha en un entero. ✅
 º5)print_bits: Imprime los bits de un número entero. ✅
 º6)string_compare: Compara dos cadenas de caracteres.
-7)search_chr: Busca un carácter específico dentro de una cadena.
-8)search_substring: Busca una subcadena específica dentro de una cadena.
 
 4. Algoritmos y Codificación
 ___________________________________________________
-1)parity: Implementa la verificación de paridad utilizando operaciones bitwise.
+
+(investigar shannons error reed solomon codes)
+
 2)hamming_code: Implementa el código de Hamming para detección y corrección de errores.
 3)checksum: Implementa una suma de verificación básica para detectar errores en datos.
 4)crc: Implementa un algoritmo CRC (Cyclic Redundancy Check) para la verificación de errores en datos.
-5)Base64 Encoding: Implementa el algoritmo Base64 para codificar datos binarios en una representación textual.
-6)Base64 Decoding: Implementa el algoritmo Base64 para decodificar datos codificados en Base64 de vuelta a su forma binaria original.
+5)Base64: Implementa el algoritmo Base64 para codificar y descodificar datos binarios en una representación textual.
